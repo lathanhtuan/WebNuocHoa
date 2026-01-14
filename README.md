@@ -1,0 +1,3 @@
+-Công cụ chạy:Eclipse.Xampp 
+-server tomcat 9 Mysql.
+- Cho chạy khởi động xampp, rồi vào eclispe chạy file trang chủ.jsp
