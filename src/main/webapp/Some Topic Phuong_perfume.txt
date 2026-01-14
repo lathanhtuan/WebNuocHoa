@@ -1,0 +1,40 @@
+Làm phần quảng cáo trong Phuong_perfume theo mô hình MVC
+Model
+	1.Java bean
+	2.Business logic:QuanCaoBL ->docTatCa() ->ListQuangCao->
+View
+	3.JSP:Sửa lại trang Views/quang-cao.jsp cho dữ liệu động
+Controller
+	4.Servlet: quảng cáo Servlet
+		- chuẩn bị dữ liệu 
+		- đặt lên thuộc tính 
+		- trả về trang views/quang-cao.jsp để hiển thị 
+Sửa trong trang-chu.jsp : không thể gọi trang đó.
+Sửa lại cấu hình bắt lỗi
+	window/preferents/web/JSP files/Validation/
+		included fragment file not found: error ->warning
+		included fragment file not specified: error ->warning
+
+Phần sản phẩm mới theo mô hình MVC
+Model:	
+	1.Java bean: SanPham
+	2.Business logic: SanPhamBL->đọc 10 sản phẩm mới.(int top) ->List<SanPham>
+view:
+	3.JSP: sửa lại trang Views/san-pham-moi.jsp cho dữ liệu động.
+Controller:
+	4.Servlet: SanPhamMoiServlet
+		- chuẩn bị dữ liệu 10 sản phẩm mới.
+		- đặt dữ liệu lên thuộc tính
+		- Trả dữ liệu về trang vierws/san-pham-moi.jsp
+	
+Phần đăng nhập theo mô hình MVC
+Model:
+	1.Java bean:NguoiDung
+	2.Business logic: NguoiDungBL -> timNguoiDung(String email,String password) ->NguoiDung
+View:
+	3.JSP: sửa lại trang Views/cuoi-trang.jsp cho form đăng nhập
+Controller:
+	4.servlet:DangNhapServlet
+		- Tìm người dùng theo email và password
+		- Đặt đối tượng  nguoiDung lên Session
+		- Trả về trang chủ và lấy tên người dùng đưa lên đầu trang.
